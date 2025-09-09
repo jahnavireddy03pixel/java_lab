@@ -1,0 +1,92 @@
+code:
+package com.sample;
+
+import java.util.Scanner;
+
+public class Electricitybill {
+
+
+
+	public static void main(String[] args) {
+
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter old readings:");
+
+		int oldreadings=sc.nextInt();
+
+		System.out.println("Enter current readings:");
+
+		int currentreadings=sc.nextInt();
+
+		int unitsconsumed=currentreadings-oldreadings;
+
+		System.out.println("Total units consumed:"+unitsconsumed);
+
+		int charge=0;
+
+		if (unitsconsumed<=50)
+
+		{
+
+			charge=unitsconsumed*1;
+
+		}
+
+		else if (unitsconsumed<=100)
+
+		{
+
+			charge=(unitsconsumed*1)+(unitsconsumed*2);
+
+		}
+
+		else if (unitsconsumed<=200)
+
+		{
+
+			charge=(unitsconsumed*1)+(unitsconsumed*2)+(unitsconsumed*3);
+
+		}
+
+		else if (unitsconsumed<=300)
+
+		{
+
+			charge=(unitsconsumed*1)+(unitsconsumed*2)+(unitsconsumed*3)+(unitsconsumed*4);
+
+		}
+
+		else
+
+		{
+
+			charge=(unitsconsumed*1)+(unitsconsumed*2)+(unitsconsumed*3)+(unitsconsumed*4)+(unitsconsumed*5);
+
+		}
+
+		
+
+		System.out.println("Total Charge:"+charge);
+
+		
+
+
+
+	}
+
+
+
+}
+output:
+Enter old readings:
+
+100
+
+Enter current readings:
+
+200
+
+Total units consumed:100
+
+Total Charge:300
