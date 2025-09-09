@@ -1,0 +1,60 @@
+code:
+package com.sample;
+import java.util.*;
+public class Simplecalculator {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter first number:");
+		double num1=sc.nextDouble();
+		System.out.println("Enter second number:");
+		double num2=sc.nextDouble();
+		System.out.println("Enter any operator from(+,-,*,/):");
+		char operator=sc.next().charAt(0);
+		double result;
+		switch (operator)
+		{
+		case '+':
+			result= num1+num2;
+			System.out.println("Sum of 2 numbers:"+result);
+			break;
+		case '-':
+			result=num1-num2;
+			System.out.println("Difference between 2 numbers:"+result);
+			break;
+		case '*':
+			result=num1*num2;
+			System.out.println("Multiplicatin of 2 numbers:"+result);
+			break;
+		case '/':
+			if (num2==0)
+			{
+				System.out.println("Division of any number by 0 is undefined");
+			}
+			else
+			{
+			result=num1/num2;
+			System.out.println("Division of 2 numbers:"+result);
+			}
+			break;
+			
+		default:
+			System.out.println("Choose one operator from (+,-,*,/):");
+			
+		}
+		
+    sc.close();
+	}
+	
+
+}
+
+
+output:
+Enter first number:
+5
+Enter second number:
+2
+Enter any operator from(+,-,*,/):
+/
+Division of 2 numbers:2.5
