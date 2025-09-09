@@ -1,0 +1,40 @@
+package com.sample;
+import java.util.Scanner;
+public class ArthematicOperations {
+ public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+		Scanner ao=new Scanner(System.in);
+
+		System.out.println("Enter any two numbers:");
+
+		int a=ao.nextInt();
+
+		int b=ao.nextInt();
+
+		int add=(a+b);
+
+		int sub=(a-b);
+
+		float mult=a*b;
+
+		int div=a/b;
+
+		System.out.println("Addition of 2 numbers:"+add);
+
+		System.out.println("Subtraction of 2 numbers:"+sub);
+
+		System.out.println("Multiplictation of 2 numbers:"+mult);
+
+		System.out.println("Division of 2 numbers:"+div);
+
+		ao.close();
+
+	}
+
+
+
+}
+
+output:
