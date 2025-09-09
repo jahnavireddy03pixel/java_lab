@@ -1,0 +1,49 @@
+code:
+
+package com.sample;
+import java.util.Scanner; 
+
+public class EvenOddSum {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number of intergers:");
+		int n=sc.nextInt();
+		int Evensum=0;
+		int Oddsum=0;
+		for (int i=1;i<=n;i++)
+		{
+			System.out.println("Enter integer"+i+":");
+			int number=sc.nextInt();
+			if (number%2==0)
+			{
+				Evensum+=number;
+			}
+			else
+			{
+				Oddsum+=number;
+			}
+			
+		}
+		System.out.println("Sum of Even numbers:"+Evensum);
+		System.out.println("Sum of Odd numbers:"+Oddsum);
+		sc.close();
+	}
+
+}
+
+output:
+Enter number of intergers:
+5
+Enter integer1:
+4
+Enter integer2:
+9
+Enter integer3:
+3
+Enter integer4:
+5
+Enter integer5:
+6
+Sum of Even numbers:10
+Sum of Odd numbers:17
+
